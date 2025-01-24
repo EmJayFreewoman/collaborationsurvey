@@ -8,22 +8,31 @@
   <body>
     <h1>How do you collaborate with other teams in your organization?</h1>
     <p>Please complete the two questions below.</p>
-    <form method="post" action="https://formspree.io/f/xzzdbdjb">
+    <form method="POST" action="https://formspree.io/f/xzzdbdjb">
       <fieldset>
         <label for="job-title"
           >Please enter your job title:
           <input id="job-title" type="text" required
         /></label>
-        <label for="team-collaboration"
-          >How do you collaborate with other teams?<textarea></textarea>
-          <input id="team-collaboration" type="text" required
-        /></label>
-        <label for="customer-feedback"
-          >If you don't already work closely with customers, would greater
-          visibility into customer feedback impact your ability to do your
-          job?<textarea></textarea>
-          <input id="customer-feedback" type="text" required
-        /></label>
+
+        <label for="team-collaboration">
+          How do you collaborate with other teams?
+          <textarea
+            id="team-collaboration"
+            placeholder="Typically I reach out to other teams when..."
+            required
+          ></textarea>
+        </label>
+
+        <label for="customer-feedback">
+          If you don't already work closely with customers, would greater
+          visibility into customer feedback impact your ability to do your job?
+          <textarea
+            id="customer-feedback"
+            placeholder="Having greater visibility into customer feedback..."
+            required
+          ></textarea>
+        </label>
       </fieldset>
       <input type="submit" value="Submit" />
     </form>
